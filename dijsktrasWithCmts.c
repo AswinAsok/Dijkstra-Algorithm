@@ -20,7 +20,7 @@ void main()
 
     /*
     for calulating the distances we need another similar matrix also for storing
-    the relaxed distance as per Abdul Bari Sir's video.
+    the relaxed distance as per Abdul Bari Sir's video(https://www.youtube.com/watch?v=XB4MIexjvY0).
     */
     int calculationArray[n][n];
 
