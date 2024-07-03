@@ -6,6 +6,11 @@ void main()
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
 
+    int destinationVertex;
+    int destinationVertexDistance;
+    printf("Enter the destination vertex: ");
+    scanf("%d", &destinationVertex);
+
     /*
     vertexDistances is used to store the distance from one vertex to another,
     where the row indicates the current vertex the column indicates another vertex.
@@ -124,8 +129,12 @@ void main()
 
     for (int j = 1; j < n; j++)
     {
+        if(j+1 == destinationVertex)
+            destinationVertexDistance =  calculationArray[n - 1][j];
         printf("%d\t\t %d\t \n", j + 1, calculationArray[n - 1][j]);
     }
+
+    printf("\nDistance to Destination: %d\n", destinationVertexDistance);
 }
 
 /*
